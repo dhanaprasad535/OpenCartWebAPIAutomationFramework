@@ -12,6 +12,7 @@ node_modules/
 /allure-report
 # Environment files
 config/.env.*
+!/config/.env.example
 # OS
 .Ds_Store
 reporting-labs.history.json
