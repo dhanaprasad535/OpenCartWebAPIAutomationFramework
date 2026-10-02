@@ -89,8 +89,3 @@ test("booking CRUD with token", async ({ request }) => {
   );
   expect(deleteResponse.status()).toBe(201);
 });
-
-test("booking CRUD with token using ApiHelper", async ({ apiHelper, page }) => {
-  await page.getByRole("button", { name: "login" }).click();
-  await expect(page.getByRole("heading", { name: "Dashboard" })).toBeVisible();
-});

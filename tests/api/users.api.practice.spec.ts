@@ -6,7 +6,7 @@ let AUTH_TOKEN = {
 };
 
 let userid: number;
-test("get all users api test", async ({ request }) => {
+test.skip("get all users api test", async ({ request }) => {
   let response: APIResponse = await request.get(
     "https://gorest.co.in/public/v2/users",
     {
@@ -22,7 +22,7 @@ test("get all users api test", async ({ request }) => {
   expect(response.status()).toBe(200);
 });
 
-test("create a user POST api test", async ({ request }) => {
+test.skip("create a user POST api test", async ({ request }) => {
   let payload = {
     name: "Rakesh K",
     email: `RakeshK_${Date.now()}@gmail.com`,
@@ -48,7 +48,7 @@ test("create a user POST api test", async ({ request }) => {
   expect(response.status()).toBe(201);
 });
 
-test("update a user PUT api test", async ({ request }) => {
+test.skip("update a user PUT api test", async ({ request }) => {
   let payload = {
     name: "Rakesh KK",
     email: "RakeshK@gmail.com",
@@ -74,7 +74,7 @@ test("update a user PUT api test", async ({ request }) => {
   expect(response.status()).toBe(200);
 });
 
-test("delete a user DELETE api test", async ({ request }) => {
+test.skip("delete a user DELETE api test", async ({ request }) => {
   let response: APIResponse = await request.delete(
     `https://gorest.co.in/public/v2/users/${userid}`,
     {

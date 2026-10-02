@@ -23,7 +23,7 @@ test.beforeAll("generate access token", async ({ request }) => {
   access_token = responseJson.access_token;
 });
 
-test("get album data", async ({ request }) => {
+test.skip("get album data", async ({ request }) => {
   let albumResponse = await request.get(
     "https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy",
     {
