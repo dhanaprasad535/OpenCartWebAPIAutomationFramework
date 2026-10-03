@@ -9,7 +9,7 @@ test.beforeEach(async ({ loginPage }) => {
   await loginPage.goToLoginPage();
 });
 
-test("login page title test", async ({ loginPage, basePage }) => {
+test("@smoke login page title test", async ({ loginPage, basePage }) => {
   meta({
     severity: "critical",
     feature: "Authentication",
@@ -24,7 +24,7 @@ test("login page title test", async ({ loginPage, basePage }) => {
   expect(title).toBe("Account Login");
 });
 
-test("forgot password link exist test", async ({ loginPage }) => {
+test("@regression forgot password link exist test", async ({ loginPage }) => {
   meta({
     severity: "critical",
     feature: "f31",
@@ -35,7 +35,7 @@ test("forgot password link exist test", async ({ loginPage }) => {
   expect(await loginPage.isForgottenPasswordLinkExists()).toBeTruthy();
 });
 
-test("user is able to login to the app with valid credentials", async ({
+test("@regression user is able to login to the app with valid credentials", async ({
   loginPage,
   homePage,
 }) => {
@@ -70,7 +70,7 @@ test("user is able to login to the app with valid credentials", async ({
 
 let testdata = CSVHelper.readCsv("src/testdata/logindata.csv");
 for (let row of testdata) {
-  test(`user is able to login to the app with invalid credentials with csv data - ${row.username} - ${row.password}`, async ({
+  test(`@regression user is able to login to the app with invalid credentials with csv data - ${row.username} - ${row.password}`, async ({
     loginPage,
   }) => {
     await testData(testdata, "Invalid test data");
@@ -84,7 +84,7 @@ let testExcelData = ExcelHelper.readExcel(
   "Sheet1",
 );
 for (let row of testExcelData) {
-  test(`user is able to login to the app with invalid credentials with excel data - ${row.username} - ${row.password}`, async ({
+  test(`@regression user is able to login to the app with invalid credentials with excel data - ${row.username} - ${row.password}`, async ({
     loginPage,
   }) => {
     await loginPage.doLogin(row.username!, row.password!);
@@ -94,7 +94,7 @@ for (let row of testExcelData) {
 
 let testJsonData = JSONHelper.readJson("src/testdata/logindata.json");
 for (let row of testJsonData) {
-  test(`user is able to login to the app with invalid credentials with json data - ${row.username} - ${row.password}`, async ({
+  test(`@regression user is able to login to the app with invalid credentials with json data - ${row.username} - ${row.password}`, async ({
     loginPage,
   }) => {
     await loginPage.doLogin(row.username!, row.password!);
@@ -103,19 +103,19 @@ for (let row of testJsonData) {
 }
 
 // common features test
-test("app logo exists on login page", async ({ basePage }) => {
+test("@smoke app logo exists on login page", async ({ basePage }) => {
   expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
-test("search box exists on login page", async ({ basePage }) => {
+test("@smoke search box exists on login page", async ({ basePage }) => {
   expect(await basePage.isSearchBoxVisible()).toBeTruthy();
 });
 
-test("cart button exists on login page", async ({ basePage }) => {
+test("@smoke cart button exists on login page", async ({ basePage }) => {
   expect(await basePage.isCartButtonVisible()).toBeTruthy();
 });
 
-test("verify footers on login page", async ({ basePage }) => {
+test("@smoke verify footers on login page", async ({ basePage }) => {
   let footerLinks: string[] = await basePage.getPageFooters();
   for (let footerLink of footerLinks) {
     console.log("footer link", footerLink);

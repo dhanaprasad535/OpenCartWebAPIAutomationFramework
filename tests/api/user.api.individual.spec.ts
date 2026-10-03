@@ -17,7 +17,7 @@ async function createUser(apiHelper: any) {
   return response.body;
 }
 
-test("create a user", async ({ apiHelper }) => {
+test("@smoke create a user", async ({ apiHelper }) => {
   // create a user
   let userResponse = await createUser(apiHelper);
 
@@ -30,7 +30,7 @@ test("create a user", async ({ apiHelper }) => {
   expect(getResponse.body.name).toBe("apiautomation");
 });
 
-test("update a user", async ({ apiHelper }) => {
+test("@smoke update a user", async ({ apiHelper }) => {
   // create a user
   let userResponse = await createUser(apiHelper);
   // get a user
@@ -65,7 +65,7 @@ test("update a user", async ({ apiHelper }) => {
   expect(getResponse.body.status).toBe(updatePayload.status);
 });
 
-test("delete a user", async ({ apiHelper }) => {
+test("@smoke delete a user", async ({ apiHelper }) => {
   // create a user
   let userResponse = await createUser(apiHelper);
   // get a user

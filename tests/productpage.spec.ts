@@ -5,7 +5,7 @@ test.beforeEach(async ({ loginPage }) => {
   await loginPage.doLogin(process.env.APP_USERNAME!, process.env.APP_PASSWORD!);
 });
 
-test("verify product header", async ({
+test("@smoke verify product header", async ({
   homePage,
   searchResultsPage,
   productInfoPage,
@@ -15,7 +15,7 @@ test("verify product header", async ({
   expect(await productInfoPage.getProductHeader()).toBe("MacBook Pro");
 });
 
-test("verify product image count", async ({
+test("@regression verify product image count", async ({
   homePage,
   searchResultsPage,
   productInfoPage,
@@ -25,7 +25,7 @@ test("verify product image count", async ({
   expect(await productInfoPage.getProductImagesCount()).toBe(4);
 });
 
-test("verify product info", async ({
+test("@regression verify product info", async ({
   homePage,
   searchResultsPage,
   productInfoPage,
@@ -43,19 +43,19 @@ test("verify product info", async ({
 });
 
 // common features test
-test("app logo exists on login page", async ({ basePage }) => {
+test("@smoke app logo exists on login page", async ({ basePage }) => {
   expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
-test("search box exists on login page", async ({ basePage }) => {
+test("@smoke search box exists on login page", async ({ basePage }) => {
   expect(await basePage.isSearchBoxVisible()).toBeTruthy();
 });
 
-test("cart button exists on login page", async ({ basePage }) => {
+test("@smoke cart button exists on login page", async ({ basePage }) => {
   expect(await basePage.isCartButtonVisible()).toBeTruthy();
 });
 
-test("verify footers on login page", async ({ basePage }) => {
+test("@smoke verify footers on login page", async ({ basePage }) => {
   let footerLinks: string[] = await basePage.getPageFooters();
   for (let footerLink of footerLinks) {
     console.log("footer link", footerLink);

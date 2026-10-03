@@ -9,7 +9,7 @@ test.beforeEach(async ({ loginPage }) => {
 
 let testData = CSVHelper.readCsv("src/testdata/product.csv");
 for (let row of testData) {
-  test(`verify search results count ${row.searchkey} - ${row.productname}`, async ({
+  test(`@regression verify search results count ${row.searchkey} - ${row.productname}`, async ({
     homePage,
     searchResultsPage,
   }) => {
@@ -22,7 +22,7 @@ for (let row of testData) {
 }
 
 for (let row of testData) {
-  test(`verify user is able to land on the product info page ${row.searchkey} - ${row.productname}`, async ({
+  test(`@smoke verify user is able to land on the product info page ${row.searchkey} - ${row.productname}`, async ({
     homePage,
     searchResultsPage,
     page,
@@ -34,19 +34,19 @@ for (let row of testData) {
 }
 
 // common features test
-test("app logo exists on login page", async ({ basePage }) => {
+test("@smoke app logo exists on login page", async ({ basePage }) => {
   expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
-test("search box exists on login page", async ({ basePage }) => {
+test("@smoke search box exists on login page", async ({ basePage }) => {
   expect(await basePage.isSearchBoxVisible()).toBeTruthy();
 });
 
-test("cart button exists on login page", async ({ basePage }) => {
+test("@smoke cart button exists on login page", async ({ basePage }) => {
   expect(await basePage.isCartButtonVisible()).toBeTruthy();
 });
 
-test("verify footers on login page", async ({ basePage }) => {
+test("@smoke verify footers on login page", async ({ basePage }) => {
   let footerLinks: string[] = await basePage.getPageFooters();
   for (let footerLink of footerLinks) {
     console.log("footer link", footerLink);

@@ -13,7 +13,7 @@ const AUTH_HEADER = {
 //   items: userSchema,
 // };
 
-test("get a user - schema test", async ({ apiHelper }) => {
+test("@regression get a user - schema test", async ({ apiHelper }) => {
   let payload = {
     name: "Rakesh Naik KK",
     email: `RakeshKK${Date.now()}@gmail.com`,

@@ -14,7 +14,7 @@ test.describe.serial("running e2e go rest tests", () => {
     expect(response.body.length).toBeGreaterThan(0);
   });
 
-  test("post - create a user api", async ({ apiHelper }) => {
+  test("@regression post - create a user api", async ({ apiHelper }) => {
     let payload = {
       name: "Rakesh Naik KK",
       email: `RakeshKK${Date.now()}@gmail.com`,
@@ -31,7 +31,7 @@ test.describe.serial("running e2e go rest tests", () => {
     expect(response.body.name).toBe(payload.name);
   });
 
-  test("put - update a user api", async ({ apiHelper }) => {
+  test("@regression put - update a user api", async ({ apiHelper }) => {
     let payload = {
       name: "Rakesh Naik KK updated name",
       email: `RakeshKK${Date.now()}@gmail.com`,
@@ -49,7 +49,7 @@ test.describe.serial("running e2e go rest tests", () => {
     expect(response.body.status).toBe(payload.status);
   });
 
-  test("delete - delete a user api", async ({ apiHelper }) => {
+  test("@regression delete - delete a user api", async ({ apiHelper }) => {
     let response = await apiHelper.delete(
       `/public/v2/users/${userid}`,
       AUTH_HEADER,

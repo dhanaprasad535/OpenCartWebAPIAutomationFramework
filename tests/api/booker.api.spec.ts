@@ -22,7 +22,7 @@ test.beforeEach("get access token", async ({ request }) => {
   tokenId = responseJson.token;
 });
 
-test("booking CRUD with token", async ({ request }) => {
+test("@regression booking CRUD with token", async ({ request }) => {
   let bookingData = {
     firstname: "Adi",
     lastname: "Samba",
