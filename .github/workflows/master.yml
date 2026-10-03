@@ -122,6 +122,10 @@ jobs:
           echo "========================================="
           echo "  Running SANITY @smoke on DEV"
           echo "========================================="
+
+          echo "USERNAME exists: ${{ secrets.APP_USERNAME != '' }}"
+          echo "PASSWORD exists: ${{ secrets.APP_PASSWORD != '' }}"
+          echo "BASE_URL exists: ${{ secrets.BASE_URL != '' }}"
           npx playwright test --project=chromium --grep @smoke
         env:
           ENV: dev
