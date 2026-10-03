@@ -1,0 +1,7 @@
+{
+  id: 8647314,
+  name: 'Rakesh Naik KK updated name',
+  email: 'RakeshKK1791024474003@gmail.com',
+  gender: 'male',
+  status: 'inactive'
+} 200
