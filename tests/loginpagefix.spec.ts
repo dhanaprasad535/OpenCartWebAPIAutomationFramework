@@ -70,7 +70,7 @@ test("@regression user is able to login to the app with valid credentials", asyn
 
 let testdata = CSVHelper.readCsv("src/testdata/logindata.csv");
 for (let row of testdata) {
-  test(`@regression user is able to login to the app with invalid credentials with csv data - ${row.username} - ${row.password}`, async ({
+  test(`user is able to login to the app with invalid credentials with csv data - ${row.username} - ${row.password}`, async ({
     loginPage,
   }) => {
     await testData(testdata, "Invalid test data");
@@ -84,7 +84,7 @@ let testExcelData = ExcelHelper.readExcel(
   "Sheet1",
 );
 for (let row of testExcelData) {
-  test(`@regression user is able to login to the app with invalid credentials with excel data - ${row.username} - ${row.password}`, async ({
+  test(`user is able to login to the app with invalid credentials with excel data - ${row.username} - ${row.password}`, async ({
     loginPage,
   }) => {
     await loginPage.doLogin(row.username!, row.password!);
