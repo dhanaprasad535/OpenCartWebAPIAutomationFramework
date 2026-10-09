@@ -1,7 +1,7 @@
 // ═══════════════════════════════════════════════════════════════
 // Jenkinsfile — Master CI/CD Pipeline (WINDOWS VERSION)
 // Playwright TypeScript Framework
-// Naveen Automation Labs
+// Dhana Prasad
 // ═══════════════════════════════════════════════════════════════
 // Reports per stage (3 reports × 4 envs = 12 total):
 //   1. PW HTML Report    → reports-{env}/html/
@@ -80,8 +80,8 @@ pipeline {
                 echo "  Installing Playwright Dependencies"
                 echo "========================================="
                 dir('qa-tests') {
-                    git url: 'https://github.com/naveenanimation20/OpenCartWebAPIAutomationFramework.git',
-                        branch: 'main'
+                    git url: 'https://github.com/dhanaprasad535/OpenCartWebAPIAutomationFramework.git',
+                        branch: 'master'
                     bat 'npm ci'
                     bat 'npx playwright install --with-deps chromium'
                 }
@@ -457,7 +457,7 @@ pipeline {
                                     <a href="${env.BUILD_URL}console" style="display: inline-block; padding: 10px 20px; background: #6c757d; color: white; text-decoration: none; border-radius: 6px; margin: 4px;">🔍 Console Logs</a>
                                 </div>
                                 <div style="text-align: center; padding: 16px; color: #999; font-size: 12px; border-top: 1px solid #eee;">
-                                    Naveen Automation Labs | Playwright Framework
+                                    Dhana Prasad | Playwright Framework
                                 </div>
                             </div>
                         </body>
