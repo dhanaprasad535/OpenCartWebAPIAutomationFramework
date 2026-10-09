@@ -124,6 +124,10 @@ pipeline {
                             set ENV=dev
                             set GRANT_TYPE=client_credentials
                             npx playwright test --project=chromium --grep @smoke
+                            echo Playwright exit code: %ERRORLEVEL%
+                            dir reports
+                            dir allure-results
+                            dir reporting-labs
                         '''
                     }
                 }
@@ -188,7 +192,7 @@ pipeline {
                     '''
                     withCredentials([
                         usernamePassword(credentialsId: 'qa-credentials',
-                            usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD'),
+                            usernameVariable: 'APP_USERNAME', passwordVariable: 'APP_PASSWORD'),
                         string(credentialsId: 'api-token', variable: 'API_TOKEN'),
                         string(credentialsId: 'oauth-client-id', variable: 'OAUTH_CLIENT_ID'),
                         string(credentialsId: 'oauth-client-secret', variable: 'OAUTH_CLIENT_SECRET'),
