@@ -1,0 +1,13 @@
+user creds rsilva@gmail.com - LpZ9v2nC7DR@QRb
+search key: macbook
+productName  MacBook Pro
+product info Map(8) {
+  'productHeader' => 'MacBook Pro',
+  'productImagesCount' => 4,
+  'Brand' => 'Apple',
+  'Product Code' => 'Product 18',
+  'Reward Points' => '800',
+  'Availability' => 'Out Of Stock',
+  'productPrice' => '$2,000.00',
+  'extraPrice' => '$2,000.00'
+}

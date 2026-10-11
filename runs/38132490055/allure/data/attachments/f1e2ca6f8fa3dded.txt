@@ -1,0 +1,73 @@
+[
+  {
+    id: 8661633,
+    name: 'Rakesh Naik KK',
+    email: 'RakeshKK1791714961859@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8661631,
+    name: 'apiautomation-updated',
+    email: 'apiautomation1791714957799@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8661630,
+    name: 'apiautomation',
+    email: 'apiautomation1791714956445@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8661615,
+    name: 'Rakesh Naik KK',
+    email: 'RakeshKK1791713542313@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8661613,
+    name: 'apiautomation-updated',
+    email: 'apiautomation1791713539636@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8661612,
+    name: 'apiautomation',
+    email: 'apiautomation1791713538432@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8661603,
+    name: 'Mandaakin Patil',
+    email: 'patil_mandaakin@schiller.test',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8661602,
+    name: 'Rameshwar Butt',
+    email: 'rameshwar_butt@doyle-grant.test',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8661601,
+    name: 'Mr. Pran Shukla',
+    email: 'pran_shukla_mr@klein-abernathy.test',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8661600,
+    name: 'Navin Kakkar',
+    email: 'navin_kakkar@lowe.test',
+    gender: 'male',
+    status: 'active'
+  }
+] 200
+status 200

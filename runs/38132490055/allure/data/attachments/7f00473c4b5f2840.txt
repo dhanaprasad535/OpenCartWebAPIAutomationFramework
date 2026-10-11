@@ -1,0 +1,17 @@
+user creds rsilva@gmail.com - LpZ9v2nC7DR@QRb
+footer link About Us
+footer link Delivery Information
+footer link Privacy Policy
+footer link Terms & Conditions
+footer link Contact Us
+footer link Returns
+footer link Site Map
+footer link Brands
+footer link Gift Certificates
+footer link Affiliate
+footer link Specials
+footer link My Account
+footer link Order History
+footer link Wish List
+footer link Newsletter
+footer link OpenCart
