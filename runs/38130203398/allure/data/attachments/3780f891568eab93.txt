@@ -1,0 +1,73 @@
+[
+  {
+    id: 8661580,
+    name: 'Rakesh Naik KK',
+    email: 'RakeshKK1791712674849@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8661578,
+    name: 'apiautomation-updated',
+    email: 'apiautomation1791712672232@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8661577,
+    name: 'apiautomation',
+    email: 'apiautomation1791712671135@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8661556,
+    name: 'Rakesh Naik KK',
+    email: 'RakeshKK1791709521449@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8661554,
+    name: 'apiautomation-updated',
+    email: 'apiautomation1791709520281@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8661553,
+    name: 'apiautomation',
+    email: 'apiautomation1791709519991@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8661550,
+    name: 'Rakesh Naik KK',
+    email: 'RakeshKK1791709331850@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8661548,
+    name: 'apiautomation-updated',
+    email: 'apiautomation1791709331099@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8661547,
+    name: 'apiautomation',
+    email: 'apiautomation1791709330845@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8661226,
+    name: 'apiautomation-updated',
+    email: 'apiautomation1791651835420@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  }
+] 200
+status 200

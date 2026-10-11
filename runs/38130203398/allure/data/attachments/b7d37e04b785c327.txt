@@ -1,0 +1,20 @@
+{ token: '9c5f390d60661d3' }
+{
+  bookingid: 3690,
+  booking: {
+    firstname: 'Adi',
+    lastname: 'Samba',
+    totalprice: 151,
+    depositpaid: true,
+    bookingdates: { checkin: '2023-01-01', checkout: '2023-01-03' },
+    additionalneeds: 'Breakfast'
+  }
+}
+{
+  firstname: 'AdiKumar',
+  lastname: 'Samba',
+  totalprice: 151,
+  depositpaid: true,
+  bookingdates: { checkin: '2023-01-01', checkout: '2023-01-03' },
+  additionalneeds: 'Breakfast'
+}
